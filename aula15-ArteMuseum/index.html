@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10 HTML&CSS - ArteMuseum</title>
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@Media.css" media="screen and (max-width: 768px)">
+    
+</head>
+
+<body>
+
+    <div id="pagina">
+       
+        <header>
+            <h1>ArtMuseum</h1>
+            <nav id="menuPc">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div id="menuIcon" onclick="abrirMenu()">
+                <img class="imagem" src="images/menu.svg">
+            </div>
+        </header>
+
+        <nav id="menuMobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+
+            <h2>Destaque da semana</h2>
+            <hr> <!-- linha que aparece embaixo do elemento -->
+            
+            <div id="destaque">
+                <h3>Elizabeth</h3>
+                <picture> <!-- Troca de imagem -->
+                    <source class="imagem" srcset="images/elizabethMenor.png" media="screen and (max-width: 768px)"> <!-- Media: mudar a resolução para celular -->
+                    <source class="imagem" srcset="images/elizabethLandscape.png" media="screen and (orientation: landscape) and (max-height: 500px">
+                    <img class="imagem" src="images/elizabeth.jpg">
+                </picture> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure, expedita provident porro aliquam fugiat! Quod est eius, voluptates numquam quisquam hic ratione reprehenderit facere, quibusdam minus in atque eaque?</p>
+                <button type="button">Ver sobre</button>
+            </div>
+            
+            <p id="textoPagina">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, corporis a dolore facere ullam, labore saepe autem fugit ipsam rem debitis animi reiciendis tempora architecto nobis optio doloremque sequi nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae quaerat modi temporibus quas id minus quasi deleniti similique at? Ut incidunt nihil quia sed natus ratione quibusdam, totam quo!</p>
+            <h2>Artes</h2>
+            <hr>
+
+            <section id="galeria">
+                <div class="post">
+                    <h3>Título da arte</h3>
+                    <img class="imagem" src="images/arte3.jpg">
+                    <p>Descrição da arte</p>
+                 <button type="button">Ver sobre</button>
+                </div>
+
+                <div class="post">
+                    <h3>Título da arte</h3>
+                    <img class="imagem" src="images/arte2.jpg">
+                    <p>Descrição da arte</p>
+                 <button type="button">Ver sobre</button>
+                </div>
+
+                <div class="post">
+                    <h3>Título da arte</h3>
+                    <img class="imagem" src="images/arte1.jpg">
+                    <p>Descrição da arte</p>
+                 <button type="button">Ver sobre</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer></footer>  
+
+    </div>
+
+    <script>
+
+        function abrirMenu(){
+            if(menuMobile.style.display == "none"){
+            menuMobile.style.display = "flex"; 
+            }else{
+                menuMobile.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

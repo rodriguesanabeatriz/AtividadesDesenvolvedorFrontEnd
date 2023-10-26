@@ -1,0 +1,44 @@
+#menuIcon{
+    display: block; /* Display padrão do navegador*/
+}
+
+#menuPc{
+    display: none;
+}
+
+#destaque{
+    width: 90%;
+}
+
+.post{
+    width: 90%;
+}
+
+#menuMobile{
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #2A2B2A;
+    transition: 0.5s;
+}
+
+#menuMobile ul{
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menuMobile li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuMobile li:hover{
+    background-color: #3c3d3c;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
